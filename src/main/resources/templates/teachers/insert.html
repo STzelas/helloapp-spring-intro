@@ -6,19 +6,19 @@
 </head>
 <body>
   <div th:object="${teacherInsertDTO}">
-    <form method="post">
+    <form method="POST">
       <div>
         <span>Εισαγωγή καθηγητή</span>
       </div>
 
       <div>
         <input type="text" placeholder="Εισάγετε όνομα" th:field="*{firstname}">
-        <p th:if="${#fields.hasErrors('firstname')}" th:errors="*{'firstname}"></p>
+        <p th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}"></p>
       </div>
 
       <div>
         <input type="text" placeholder="Εισάγετε επώνυμο" th:field="*{lastname}">
-        <p th:if="${#fields.hasErrors('lastname')}" th:errors="*{'lastname}"></p>
+        <p th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}"></p>
       </div>
 
       <div>
