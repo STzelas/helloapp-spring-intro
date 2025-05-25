@@ -4,4 +4,9 @@ package gr.aueb.cf.helloapp.dto;
  * Records είναι οτι πρέπει για DTO
  * τα δίνουν έτοιμα όλα
  */
-public record TeacherInsertDTO(String firstname, String lastname) {}
+public record TeacherInsertDTO(String firstname, String lastname) {
+    // default axillary constructor
+    public TeacherInsertDTO() {
+        this(null, null);
+    }
+}
